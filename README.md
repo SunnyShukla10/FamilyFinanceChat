@@ -12,6 +12,12 @@ This project was developed for FIN 602 to modernize how students practice financ
 
 ---
 
+## Public Release Note
+
+This repository is a sanitized public version of a larger academic project. 
+Prior to making it public, internal deployment, configuration, and research artifacts were intentionally removed or refactored to avoid exposing sensitive infrastructure details. 
+Sample files and documentation are provided where appropriate to illustrate structure and functionality.
+
 
 ## Quick Links
 - Repository: https://github.com/mfedenia/FamilyFinanceChat

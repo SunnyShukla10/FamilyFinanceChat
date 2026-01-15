@@ -14,56 +14,6 @@ This feature adds a convenient floating button to the Open WebUI interface that 
 
 ---
 
-## Setup Instructions
-
-
-### **Quick Setup:**
-1. Run `docker-compose up -d` (volume mounts handle the integration)
-2. Add a browser bookmark with this URL:
-   ```
-   javascript:fetch('/api/v1/custom/inject-script?_='+Date.now()).then(r=>r.text()).then(eval)
-   ```
-3. Click the bookmark while on Open WebUI to load the floating button
-
-### Step 1: Docker Compose Configuration
-
-The setup is handled entirely through Docker volume mounts. The `docker-compose.yml` file mounts the custom code into the Open WebUI container:
-
-```yaml
-open-webui:
-  image: ghcr.io/open-webui/open-webui:main
-  volumes:
-    # Replace main.py with our modified version
-    - /home/mishiev_wisc_edu/FamilyFinanceChat/custom-code/main.py:/app/backend/open_webui/main.py:ro
-    # Mount the entire custom-code folder
-    - /home/mishiev_wisc_edu/FamilyFinanceChat/custom-code:/app/custom-code:ro
-    # Mount custom_pdf_router.py into routers folder
-    - /home/mishiev_wisc_edu/FamilyFinanceChat/custom-code/integrated_backend/custom_pdf_router.py:/app/backend/open_webui/routers/custom_pdf_router.py:ro
-```
-
-Simply run:
-```bash
-docker-compose up -d
-```
-
-### Step 2: Browser Bookmark Setup
-
-To access the PDF crawler UI, create a browser bookmark:
-
-1. **Open your browser's Bookmark menu** and add a new bookmark
-2. **Name it** whatever you like (e.g., "PDF Crawler")
-3. **Set the URL** to the following JavaScript command:
-
-```javascript
-javascript:fetch('/api/v1/custom/inject-script?_='+Date.now()).then(r=>r.text()).then(eval)
-```
-
-4. **Click the bookmark** while on the Open WebUI page to load the floating button!
-
-> **Tip**: The `Date.now()` parameter prevents caching, ensuring you always get the latest version of the script.
-
----
-
 ## Future Version Compatibility
 
 Even if the layout of Open WebUI's `main.py` changes in future versions, you only need to ensure:
