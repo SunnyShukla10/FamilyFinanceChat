@@ -1,8 +1,13 @@
 # FamilyFinanceChat
 
-Repository: https://github.com/mfedenia/FamilyFinanceChat
+## Public Release Note
 
-This repository contains several experimental applications exploring document ingestion, retrieval, and AI-driven evaluation workflows. Each project folder is an independent app with its own README and setup steps.
+This repository is a refactored and sanitized public release of a larger academic project. 
+Internal deployment, configuration, and research artifacts were intentionally removed or replaced prior to publication to ensure safe public sharing while preserving core system design and functionality. 
+
+The repository contains several experimental applications exploring document ingestion, retrieval, and AI-driven evaluation workflows. 
+Each project directory represents an independent application with its own README, configuration requirements, and setup instructions.
+
 
 ---
 
@@ -12,11 +17,7 @@ This project was developed for FIN 602 to modernize how students practice financ
 
 ---
 
-## Public Release Note
 
-This repository is a sanitized public version of a larger academic project. 
-Prior to making it public, internal deployment, configuration, and research artifacts were intentionally removed or refactored to avoid exposing sensitive infrastructure details. 
-Sample files and documentation are provided where appropriate to illustrate structure and functionality.
 
 
 ## Quick Links
