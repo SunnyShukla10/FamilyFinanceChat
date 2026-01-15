@@ -107,3 +107,17 @@ openwebui_data/
 # Jupyter checkpoints
 .ipynb_checkpoints/
 *.ipynb_checkpoints
+
+
+
+# Sensitive info
+Dockerfile/ 
+docker-compose.yml
+custom-code/main.py
+custom-code/upload_pdf_app/run_local.sh
+custom-code/upload_pdf_app/stop_all.sh
+custom-code/upload_pdf_app/nginx.conf
+rag_bio_project/abi_trust_pipeline/abi_pipeline_demo.ipynb
+rag_bio_project/index
+rag_bio_project/data_pdfs
+rag_bio_project/training_testing_pipeline/test_unified_train.ipynb
